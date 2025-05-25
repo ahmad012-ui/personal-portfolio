@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description -->
+    <meta name="description" content="Ahmad Rehman - Frontend Developer Portfolio">
+    <meta name="keywords" content="Portfolio, Ahmad Rehman, Frontend Developer, Web Development, web developer in Karachi, Frontend masters, developer karachi, web developer in Pakistan, Ahmad Rehman portfolio, Ahmad Rehman projects, Ahmad Rehman contact, Ahmad Rehman about">
+    <meta name="author" content="Ahmad Rehman">
+    <!-- title -->
+    <title>Ahmad's Portfolio</title>
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="port.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+    <!-- personal portfolio-->
+    <nav class="nav">
+        <h1><a href="index.html">Ahmad Rehman</a></h1>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="about-page.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+    <!-- Hero section--> 
+    <section class="info-section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="info">
+            <h1>Hi, I'm Ahmad</h1>
+            <p>A front-end developer dedicated to crafting modern, responsive, and user-friendly websites. With expertise in HTML, CSS and JavaScript, I build dynamic web experiences that blend creativity with functionality.</p>
+            <button type="button" class="buttons">
+                <a href="about-page.html" class="btn">View Profile</a>
+            </button> 
+        </div><br><br><br>
+
+        <div class="scroll-down"></div>
+    </section>
+    <!-- Projects Section -->
+     
+     <section id="projects" class="projects-section"  data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="project-head"  data-aos="fade-up">Projects</h2>
+        <div class="project-container">
+          <!-- project 1 -->
+            <article class="project"  data-aos="fade-up"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img src="ec1.avif" alt="E-Commerce App Screenshot" srcset="ec1-small.avif 600w, ec1.avif 1200w"
+                sizes="(max-width: 768px) 100vw, 50vw" class="project-img">
+                <h3>E-Commerce Web-Page</h3>
+                <p>A full-stack e-commerce application with payment integration.</p>
+                <a href="https://github.com/ahmad012-ui/E-project" class="" target="_blank">
+                  <button type="button" class="project-btn">
+                  GitHub
+                  </button>
+                </a>
+                <a href="https://ahmad012-ui.github.io/E-project/" class="" target="_blank">
+                <button type="button" class="project-btn">
+                  Live Demo
+                </button>
+                </a>
+            </article>
+            <!-- project 2 -->
+            <article class="project"  data-aos="fade-up" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                <img src="ec2.avif" alt="plant selling page Screenshot" srcset="ec2-small.avif 600w, ec2.avif 1200w" 
+                sizes="(max-width: 768px) 100vw, 50vw"  class="project-img">
+                <h3>Plant Selling Web-Page</h3>
+                <p>A simple, responsive landing page designed to showcase a product.</p>
+                <a href="https://github.com/ahmad012-ui/stem-and-stone" target="_blank">
+                  <button type="button">  
+                    GitHub
+                  </button>
+                </a>
+                <a href="https://ahmad012-ui.github.io/stem-and-stone/index.html" target="_blank">
+                  <button type="button" class="btn">
+                  Live Demo
+                  </button>
+                </a>
+            </article>
+            <!-- project 3 -->
+            <article class="project"  data-aos="fade-up" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                <img src="" alt="quiz Screenshot" srcset="Quiz.small.webp 600w, Quiz.webp 1200w" 
+                sizes="(max-width: 768px) 100vw, 50vw"  class="project-img">
+                <h3>Fun Quiz</h3>
+                <p>A personal portfolio built with HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/ahmad012-ui/fun-quiz"  target="_blank">
+                  <button type="button" class="btn">
+                    GitHub
+                  </button>
+                </a>
+                <a href="https://ahmad012-ui.github.io/fun-quiz/" target="_blank">
+                  <button type="button" class="btn">
+                    Live Demo
+                  </button>
+                </a>
+            </article>
+        </div>
+     </section>
+
+     <!-- modal for projects -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">E-Commerce Web-Page</h1>
+          <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="e-project.png" alt="E-Commerce App Screenshot" srcset="e-project-small.png 600w, e-project.png 1200w" sizes="(max-width: 768px) 100vw, 50vw" class="project-img">
+            <p>'A fully functional e-commerce interface with product listings, categories, cart system, and responsive design. <br><br>
+                <div class="project-icons">
+                    <h1>Build using:</h1>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                </div>
+            </p>
+            <button type="button" class="btn">
+              <a href="https://github.com/ahmad012-ui/E-project" target="_blank">GitHub</a>
+            </button>
+            <button type="button" class="btn">
+              <a href="https://ahmad012-ui.github.io/E-project/" target="_blank">Live Demo</a>
+            </button>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 2 -->
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Plant Selling Site</h1>
+          <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="stem-n-stone.png" alt="E-Commerce App Screenshot" srcset="stem-n-stone.png 600w, stem-n-stone .png 1200w" sizes="(max-width: 768px) 100vw, 50vw" class="project-img">
+            <p>
+            A simple, responsive landing page designed to showcase a product. <br>
+            Built with HTML, CSS, and JavaScript.<br>
+            Responsive design for all devices.<br>
+            Includes a footer with social media links
+            Includes a contact form for inquiries.
+            Features a product showcase section.
+            <div class="project-icons">
+                <h1>Build using:</h1>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-bootstrap"></i>
+            </div>
+            </p>
+            <button type="button" class="btn">
+                  <a href="https://github.com/ahmad012-ui/stem-and-stone" target="_blank">GitHub</a>
+                </button>
+                <button type="button" class="btn">
+                  <a href="https://ahmad012-ui.github.io/stem-and-stone/index.html" target="_blank">Live Demo</a>
+                </button>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- modal 3 -->
+  <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Fun Quiz</h1>
+          <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="quiz.png" alt="E-Commerce App Screenshot" srcset="quiz.png 600w, quiz .png 1200w" sizes="(max-width: 768px) 100vw, 50vw" class="project-img">
+            <p>
+            A fun quiz application with multiple-choice questions and a scoring system. <br>
+            <div class="project-icons">
+              <h1>Build using:</h1>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-bootstrap"></i>
+            </div></p>
+            <button type="button" class="btn">
+                  <a href="https://github.com/ahmad012-ui/fun-quiz" target="_blank">GitHub</a>
+                </button>
+                <button type="button" class="btn">
+                  <a href="https://ahmad012-ui.github.io/fun-quiz/" target="_blank">Live Demo</a>
+                </button>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+     <!-- services section -->
+        <section id="services" class="services-section" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="section-heading">Services</h2>
+            <div class="services-grid">
+                <div class="service-item" data-aos="fade-up">
+                    <h3>Web Development</h3>
+                    <p>Building responsive and user-friendly websites.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up">
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and engaging user interfaces.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up">
+                    <h3>SEO Optimization</h3>
+                    <p>Improving website visibility and search engine ranking.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- offers -->
+        <section id="offers" class="offers-section" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="section-heading">Offers & Packages</h2>
+          <div class="offers-grid">
+          
+            <div class="offer-card" data-aos="fade-up" data-aos-delay="100">
+              <h3>Landing Page Development</h3>
+              <p>A beautiful and fully responsive single-page website using HTML, CSS, Bootstrap, and JavaScript.</p>
+              <ul>
+                <li>1 Page Design</li>
+                <li>Mobile & Tablet Responsive</li>
+                <li>Basic Animations</li>
+                <li>Clean & SEO-Friendly Code</li>
+              </ul>
+              <h4 class="price">Starting from PKR 5,000</h4>
+              <a href="#contact" class="">Order Now</a>
+            </div>
+        
+            <div class="offer-card" data-aos="fade-up" data-aos-delay="200">
+              <h3>Multi-Page Website</h3>
+              <p>A fully responsive multi-page website with custom layouts, smooth animations, and clean UI/UX design.</p>
+              <ul>
+                <li>Up to 5 Pages</li>
+                <li>Fully Responsive Design</li>
+                <li>Custom Forms Integration</li>
+                <li>Fast Performance Optimization</li>
+              </ul>
+              <h4 class="price">Starting from PKR 12,000</h4>
+              <a href="#contact" class="btn">Order Now</a>
+            </div>
+        
+            <div class="offer-card" data-aos="fade-up" data-aos-delay="300">
+              <h3>Full Frontend Web Application</h3>
+              <p>Custom-built frontend solutions with React.js / Next.js including API integrations and dynamic features.</p>
+              <ul>
+                <li>Up to 8-10 Pages/Screens</li>
+                <li>Animations & API Integration</li>
+                <li>SEO and Speed Optimized</li>
+                <li>Deployment Support (Netlify/Vercel)</li>
+              </ul>
+              <h4 class="price">Starting from PKR 30,000</h4>
+              <a href="#contact" class="btn third_btn">Order Now</a>
+            </div>
+        
+          </div>
+        </section>
+         
+        <!-- for custom projects -->
+        <section id="Custom-built" class="custom-built-section text-center" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="section-heading">Custom-Built Solutions</h2>
+          <p>Have a unique idea or special requirements? Let's work together to craft a tailored solution that fits your vision perfectly.</p>
+          <p><strong>Note:</strong> Prices may vary based on project complexity. Custom packages are available upon request.</p>
+          <a href="#contact" class="">Get in Touch</a>
+        </section>
+      
+
+     <!-- Contact Section -->
+    <section id="contact" class="contact-section"  data-aos="fade-up" data-aos-duration="1000">
+        <!-- <h2>Contact Me</h2> -->
+        <section class="contact-form-section" data-aos="fade-up">
+        <form id="contactForm" class="contact-form" action="" method="POST" data-aos="fade-up">
+            <h2>Contact Me</h2>
+            <label for="name" data-aos="fade-up">Name:</label>
+            <input data-aos="fade-up" type="text" id="name" name="name" required><br>
+            <label  data-aos="fade-up" for="email">Email:</label>
+            <input data-aos="fade-up" type="email" id="email" name="email" required><br>
+            <label data-aos="fade-up" for="budget">Budget:</label>
+            <input data-aos="fade-up" type="text" id="budget" name="subject" required><br>
+            <label data-aos="fade-up" for="message">Message:</label>
+            <textarea data-aos="fade-up" id="message" name="message" required></textarea><br>
+            <button data-aos="fade-up" type="submit" class="btn">Send Message</button>
+        </form>
+        <!-- <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p> -->
+        <section class="contact-info" data-aos="fade-up">
+        <h2 data-aos="fade-up">Get In Touch</h2>
+        <p data-aos="fade-up">Feel free to reach out for any inquiries or collaborations.</p>
+        <article data-aos="fade-up" class="nav-link"><a href="mailto:codeby.ahmad20@gmail.com"><i class="fa-solid fa-envelope"></i> codeby.ahmad@gmail.com </a></article>
+        <!-- <article data-aos="fade-up"><a href="#"><i class="fa-solid fa-phone"></i> +923112607492</a></article> -->
+        <article data-aos="fade-up"><a href="https://www.google.com/maps?q=Karachi,+Pakistan" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</a></article>
+        </section>
+        </section>
+        <p data-aos="fade-up">I'm available for hire or collaboration. Let's discuss your project.</p>
+        <section data-aos="fade-up">
+            <h3 data-aos="fade-up">Follow Me On</h3><br><br>
+            <section class="social-media">
+            <a href="https://github.com/ahmad012-ui" target="_blank" data-aos="fade-up"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ahmad-rehman-29b268316/" target="_blank" data-aos="fade-up"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/ahmad.rehmn/" data-aos="fade-up" target="_blank"><i class="fab fa-instagram" ></i></a></section>
+        </section>
+    </section>
+    <!-- Footer Section -->
+     <footer class="footer">
+      <section class="social-media">
+        <a href="https://github.com/ahmad012-ui" target="_blank" data-aos="fade-up"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ahmad-rehman-29b268316/" target="_blank" data-aos="fade-up"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/ahmad.rehmn/" data-aos="fade-up" target="_blank"><i class="fab fa-instagram" ></i></a></section>
+    </section>
+        <p>&copy; 2021 Ahmad Rehman. <a href="index.html">CodewithAhmad.com</a> All rights reserved.</p>
+    </footer>
+
+
+    <!-- AOS Animation Initialization -->
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+<script src="port.js"></script>
+
+</html>
