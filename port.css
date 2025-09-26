@@ -430,6 +430,18 @@ body {
     border: transparent;
 }
 
+/* for services part */
+.modal-body ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #f1f1f1; /* light text for dark modal */
+}
+
+.modal-body li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
 /* modal content */
 .modal-content h2 {
     font-size: 3rem;
@@ -675,7 +687,7 @@ body {
 
 /* contact form input */
 .contact-form input {
-    padding: 1rem;
+    padding: 0.5rem;
     border: none;
     border-radius: 5px;
     width: 100%;

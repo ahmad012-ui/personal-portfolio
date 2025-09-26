@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,8 @@
   <!-- css links -->
   <link rel="stylesheet" href="port.css">
   <link rel="stylesheet" href="about-page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -22,14 +25,15 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
+
 <body>
   <!-- Header -->
   <nav class="nav">
     <h1><a href="index.html">Ahmad Rehman</a></h1>
     <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
     <ul class="links">
-      <li><a href="index.html">Services</a></li>
+      <li><a href="index.html#services">Services</a></li>
       <li><a href="about-page.html">About</a></li>
       <li><a href="index.html#contact">Contact</a></li>
       <li><a href="index.html#projects">Projects</a></li>
@@ -40,55 +44,116 @@
   <section class="info-section" data-aos="fade-up" data-aos-duration="1000">
     <div class="info">
       <h1>About Me</h1>
-      <p>I'm Ahmad, a front-end developer based in Karachi. I specialize in modern, responsive web design using HTML, CSS, JavaScript, and React. I enjoy building interfaces that are clean, engaging, and user-friendly.</p>
+      <p>I’m Ahmad, a web developer passionate about crafting modern and responsive websites. With expertise in HTML,
+        CSS, JavaScript, and Bootstrap, I design and build clean, user-friendly interfaces that blend creativity with
+        functionality.</p>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section class="projects-section" data-aos="fade-up" data-aos-duration="1000">
-    <h2 class="section-heading">Tech Stack</h2>
+  <!-- Technologies Section -->
+  <section class="tech-section" data-aos="fade-up" data-aos-duration="1000">
+    <!-- FRONTEND -->
+    <h2 class="section-heading">Frontend</h2>
     <div class="tech-grid">
       <div class="tech-item">
+        <span class="material-icons">code</span>
         <h3>HTML</h3>
-        <p>Semantic structure and accessibility</p>
+        <p>Semantic structure & SEO-friendly markup.</p>
       </div>
       <div class="tech-item">
+        <span class="material-icons">palette</span>
         <h3>CSS</h3>
-        <p>Flexbox, Grid, and animations</p>
+        <p>Responsive layouts & Flexbox/Grid design.</p>
       </div>
       <div class="tech-item">
+        <span class="material-icons">memory</span>
         <h3>JavaScript</h3>
-        <p>Dynamic functionality and interactivity</p>
+        <p>Dynamic interactivity & ES6+ features.</p>
       </div>
-      <!-- <div class="tech-item">
-        <h3>React</h3>
-        <p>Component-based UI development</p>
-      </div> -->
+    </div>
+
+    <!-- BACKEND -->
+    <h2 class="section-heading">Backend</h2>
+    <div class="tech-grid">
       <div class="tech-item">
-        <h3>Bootstrap</h3>
-        <p>Prebuilt responsive components</p>
+        <span class="material-icons">storage</span>
+        <h3>PHP</h3>
+        <p>Server-side scripting & backend logic.</p>
       </div>
       <div class="tech-item">
+        <span class="material-icons">table_chart</span>
+        <h3>MySQL</h3>
+        <p>Database management & CRUD operations.</p>
+      </div>
+      <div class="tech-item">
+        <span class="material-icons">rocket_launch</span>
+        <h3>Laravel</h3>
+        <p>Modern PHP framework for scalable apps.</p>
+      </div>
+    </div>
+
+    <!-- TOOLS -->
+    <h2 class="section-heading">Tools</h2>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <span class="material-icons">terminal</span>
+        <h3>Git</h3>
+        <p>Version control system for code management.</p>
+      </div>
+      <div class="tech-item">
+        <span class="material-icons">cloud</span>
         <h3>GitHub</h3>
-        <p>Version control and collaboration</p>
+        <p>Repository hosting & collaborative workflow.</p>
+      </div>
+    </div>
+
+    <!-- CMS -->
+    <h2 class="section-heading">CMS</h2>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <span class="material-icons">web</span>
+        <h3>WordPress</h3>
+        <p>CMS for creating dynamic websites & blogs.</p>
+      </div>
+    </div>
+
+    <!-- framework -->
+    <h2 class="section-heading">CSS Framework/ UI Library</h2>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <span class="material-icons">view_in_ar</span>
+        <h3>Bootstrap</h3>
+        <p>Rapid responsive design with components.</p>
+      </div>
+      <div class="tech-item">
+        <span class="material-icons">brush</span>
+        <h3>Tailwind CSS</h3>
+        <p>Utility-first CSS framework for fast design.</p>
       </div>
     </div>
   </section>
+
+
 
   <!-- Timeline Section -->
   <section class="contact-section" data-aos="fade-up" data-aos-duration="1000">
     <h2 class="section-heading">My Journey</h2>
     <ul>
-      <li>2024 – Started with HTML & CSS</li>
-      <li>2025 – Built landing pages and first projects, Learned React, improved JavaScript, Working on real-world UI/UX challenges</li>
-      <li>Still learnig to achieve big</li>
+      <li><strong>2024:</strong> Began exploring web development with HTML & CSS, building the foundation for clean and
+        semantic web design.</li>
+      <li><strong>2025:</strong> Created landing pages and initial projects, strengthened JavaScript skills, learned
+        responsive design and tackled real-world UI/UX challenges.</li>
+      <li><strong>Present:</strong> Continuously learning advanced frameworks like Laravel and Tailwind, refining
+        full-stack skills, and working towards building professional, real-world web applications.</li>
     </ul>
+
   </section>
 
   <!-- Interests Section -->
   <section class="contact-section" data-aos="fade-up" data-aos-duration="1000">
     <h2 class="section-heading">Beyond the Code</h2>
-    <p style="max-width: 700px; margin: auto; text-align: center;">I enjoy experimenting with design tools, reading tech blogs, and gaming. I believe in continuous learning and love turning ideas into digital experiences.</p>
+    <p style="max-width: 700px; margin: auto; text-align: center;">I enjoy experimenting with design tools, reading tech
+      blogs, and gaming. I believe in continuous learning and love turning ideas into digital experiences.</p>
   </section>
 
   <!-- CTA Section -->
@@ -104,8 +169,10 @@
   <footer class="footer">
     <div class="social-media">
       <a href="https://github.com/ahmad012-ui" target="_blank" data-aos="fade-up"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/ahmad-rehman-29b268316/" target="_blank" data-aos="fade-up"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/ahmad.rehmn/" data-aos="fade-up" target="_blank"><i class="fab fa-instagram" ></i></a>
+      <a href="https://www.linkedin.com/in/ahmad-rehman-29b268316/" target="_blank" data-aos="fade-up"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/ahmad.rehmn/" data-aos="fade-up" target="_blank"><i
+          class="fab fa-instagram"></i></a>
     </div>
     <p>&copy; 2025 Ahmad Rehman. <a href="index.html">CodewithAhmad.com</a>All rights reserved.</p>
   </footer>
@@ -114,4 +181,5 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
 </body>
+
 </html>
